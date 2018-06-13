@@ -1,0 +1,10 @@
+---
+applications:
+- name: mailListen
+  instances: 1
+  domain: tcp.cloudfoundry.onefiserv.net
+  port: 60008
+  memory: 128MB
+  disk_quota: 1024MB
+  buildpack: python_buildpack_current
+  command: python FakeSMTP.py

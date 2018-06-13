@@ -1,0 +1,7 @@
+name: FakeSMTP
+dependencies:
+- python>=3.5
+- pip
+- pip:
+  - asyncio
+  - aiosmtpd

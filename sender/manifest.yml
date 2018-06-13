@@ -1,0 +1,8 @@
+---
+applications:
+- name: mailSend
+  instances: 1
+  memory: 128MB
+  disk_quota: 1024MB
+  buildpack: python_buildpack_current
+  command: python FakeEmailer.py
